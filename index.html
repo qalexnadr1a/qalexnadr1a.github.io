@@ -62,6 +62,20 @@
             margin-bottom: 15px;
         }
 
+        .cert-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .cert-grid img {
+            max-width: 200px;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
         footer {
             text-align: center;
             padding: 15px;
@@ -73,6 +87,10 @@
         @media (max-width: 600px) {
             body {
                 font-size: 12px;
+            }
+
+            .cert-grid img {
+                max-width: 100%;
             }
         }
     </style>
@@ -88,6 +106,7 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -134,6 +153,18 @@
         <div class="card">
             <h3>Enterprise PBX for Home</h3>
             <p>To save money and cut ties with expensive home phone services, I set up a PBX system for my dad that integrates perfectly with our UniFi ecosystem.</p>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="card">
+            <div class="cert-grid">
+                <img src="comptia.png" alt="CompTIA IT Fundamentals Certification">
+                <img src="cisco1.png" alt="Cisco Certification 1">
+                <img src="cisco2.png" alt="Cisco Certification 2">
+            </div>
+            <p style="margin-top:15px;">CompTIA IT Fundamentals Certification ID: <strong>COMP001022646091</strong></p>
         </div>
     </section>
 
